@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--unreadColor: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+}
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Verylightgrayishblue);
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    flex-direction: column;
+}
+
+main{
+    max-width: 44em;
+    background-color: var(--White);
+    padding: 1.7rem;
+    border-radius: 0.7rem;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0.7em; */
+    margin: 0 1.5rem 1.5rem 1.5rem ;
+}
+
+.notification-count{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem ;
+    margin-left: 0.7rem;
+    border-radius: 0.7rem;
+    background-color: var(--Blue);
+    color: var(--White)
+}
+
+button{
+background-color: var(--White);
+color: var(--Darkgrayishblue);
+border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+li:last-of-type{
+    margin-bottom: 0;
+}
+
+.profile-pic{
+
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.Rizky{
+    padding-top: 1.2em;
+}
+
+
+
+p{
+    color: var(--Darkgrayishblue);
+    font-size: 0.95rem;
+    letter-spacing: 0.02rem;
+}
+
+.unread{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--Red);
+    font-size: 1rem;
+
+}
+
+.markasunread{
+    background-color: var(--unreadColor);
+}
+
+.highlight{
+    color: var(--Blue);
+}
+
+.highlight:hover{
+    cursor: pointer;;
+}
+
+.user{
+    font-weight: 800;
+    color: black;
+    font-size: 1rem;
+}
+.user:hover{
+    cursor: pointer;
+}
+.post{
+    font-weight: 800;
+}
+
+
+.private_message{
+    border: 1px solid var(--Lightgrayishblue2);
+    border-radius: 0.3rem;
+    margin:10px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.private_message:hover{
+    cursor: pointer;
+    background-color:var(--Lightgrayishblue2)
+}
+
+
+
+
+.chess{
+    width:45px;
+    margin-left: 9em;
+}
+
+.chess:hover{
+    cursor: pointer;
+}
